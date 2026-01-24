@@ -12,7 +12,7 @@ const Footer = () => {
   const socialLinks = [
     { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/drone-iot-club-mmmut/' },
     { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/drone_iot_club.mmmut?utm_source=ig_web_button_share_sheet&igsh=azlqdW9uNWc3b3Jq' },
-    { name: 'GitHub', icon: Github, href: 'https://github.com/droneiotclubmmmut-blip' },
+    { name: 'GitHub', icon: Github, href: 'https://github.com/DIoT-MMMUT' },
     
   ];
 
@@ -75,7 +75,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary" />
                 <a
-                  href="mailto:contact@droneiotclub.edu"
+                  href="mailto:droneiotclub.mmmut@gmail.com"
                   className="text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
                  droneiotclub.mmmut@gmail.com
@@ -123,7 +123,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-muted-foreground text-sm">
-              © 2025 Drone & IoT Club MMMUT. All rights reserved.
+              © 2026 Drone & IoT Club MMMUT. All rights reserved.
             </p>
             <p className="text-muted-foreground text-sm">
               Built with passion for innovation and technology.
