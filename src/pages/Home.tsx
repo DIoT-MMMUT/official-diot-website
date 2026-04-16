@@ -118,28 +118,12 @@ const Home = () => {
           >
             Innovating the Skies, One Drone at a Time
           </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <Button
-              onClick={() =>
-                window.open("https://sw-leaderboard-three.vercel.app/", "_blank")
-              }
-              size="lg"
-              className="btn-neon text-lg px-8 py-6"
-            >
-              Leaderboard
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </motion.div>
+        
         </div>
       </section>
 
      {/* ================= EVENT CAROUSEL SECTION (Split Layout) ================= */}
-<section className="py-20 bg-background-secondary">
+{/* <section className="py-20 bg-background-secondary">
   <div className="container mx-auto px-4">
     <motion.h2
       initial={{ opacity: 0, y: 40 }}
@@ -152,7 +136,7 @@ const Home = () => {
     </motion.h2>
 
     <div className="relative flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto bg-card rounded-2xl shadow-xl overflow-hidden">
-      {/* Left Side – Image (2/3 width) */}
+      
       <motion.div
         key={eventDays[currentSlide].image}
         initial={{ opacity: 0, scale: 0.95 }}
@@ -167,7 +151,7 @@ const Home = () => {
         />
       </motion.div>
 
-      {/* Right Side – Text (1/3 width) */}
+     
       <div className="w-full lg:w-1/3 p-8 lg:p-12 flex flex-col justify-center text-center lg:text-left">
         <motion.h3
           key={eventDays[currentSlide].title}
@@ -189,7 +173,7 @@ const Home = () => {
           {eventDays[currentSlide].description}
         </motion.p>
 
-        {/* Slide Indicators */}
+    
         <div className="flex justify-center lg:justify-start space-x-3 mt-6">
           {eventDays.map((_, index) => (
             <button
@@ -204,7 +188,7 @@ const Home = () => {
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
 
       {/* ================= AREAS OF WORK ================= */}

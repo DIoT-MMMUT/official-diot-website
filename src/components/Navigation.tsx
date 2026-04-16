@@ -26,7 +26,7 @@ const Navigation = () => {
     { name: 'Events', path: '/events' },
     { name: 'Join Us', path: '/join-us' },
     { name: 'Teams', path: '/teams' },
-    { name: 'SW 25', path: 'https://sw-leaderboard-three.vercel.app/' },
+    // { name: 'SW 25', path: 'https://sw-leaderboard-three.vercel.app/' },
 
   ];
 
