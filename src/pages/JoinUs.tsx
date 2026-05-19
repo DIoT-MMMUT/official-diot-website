@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
-import { 
+import {  
   Lightbulb, Code, Users, Trophy, Target, Network,
   User, Crown, CheckCircle, FileText, Search, Zap, UserCheck, Users2
 } from "lucide-react";
