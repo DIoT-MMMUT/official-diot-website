@@ -320,7 +320,7 @@ const Teams = () => {
       name: 'Ayush Sachan',
       position: 'Electronics and Communication Engineering (Internet of Things)',
       image: '/Executives/AyushSachan.jpg',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/ayush-sachan08/',
     },
     {
       name: 'Aditya Raj Nishad',
@@ -332,13 +332,13 @@ const Teams = () => {
       name: 'Dev Raj',
       position: 'Electrical Engineering',
       image: '/Executives/DevRaj.jpg',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/dev-raj-b0591a371?',
     },
     {
       name: 'Gaurav Prahatiya',
       position: 'Chemical Engineering',
       image: '/Executives/GauravPrahatiya.jpg',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/gaurav-prahatiya-24940242a',
     },
     {
       name: 'Jahnvi Singh',
@@ -350,7 +350,7 @@ const Teams = () => {
       name: 'Jyotiraditya',
       position: 'Computer Science Engineering',
       image: '/Executives/Jyotiraditya.jpg',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/jyotiraditya-prajapati-95885937b?',
     },
     {
       name: 'Kumar rishi pandey',
@@ -380,7 +380,7 @@ const Teams = () => {
       name: 'Saurabh kushwaha',
       position: 'Computer Science Engineering',
       image: '/Executives/SaurabhKushwaha.jpg',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/saurabh-kushwaha-1a104a38b?',
     },
     {
       name: 'Shivansh Singh',
@@ -398,7 +398,7 @@ const Teams = () => {
       name: 'Vaishnavi Pandey',
       position: 'Electronics and Communication Engineering (Internet of Things)',
       image: '/Executives/VaishnaviPandey.jpg',
-      linkedin: 'www.linkedin.com/in/vaishnavi-pandey-b8a712363',
+      linkedin: 'https://www.linkedin.com/in/vaishnavi-pandey-b8a712363/',
     },
     {
       name: 'Yash Srivastav',

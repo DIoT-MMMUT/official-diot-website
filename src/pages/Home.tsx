@@ -279,7 +279,7 @@ const Home = () => {
                       Prof. S.K. SONI
                     </h3>
                     <p className="text-muted-foreground">
-                      Head of Department<br />
+                      Faculty Advisor<br />
                       Electronics and Communication Engineering
                     </p>
                   </div>
