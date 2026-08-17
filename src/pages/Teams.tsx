@@ -111,7 +111,7 @@ const Teams = () => {
       name: 'Rajneesh Yadav',
       position: 'Treasurer',
       branch: 'Electronics and Communication Engineering',
-      image: '/third-year/RajneeshYadav.jpg',
+      image: '/third-year/RajneeshYadav.jpeg',
       linkedin: 'https://www.linkedin.com/in/rajneesh0507',
     },
     {
