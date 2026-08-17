@@ -1,12 +1,12 @@
 'use client';
 
+import React from "react";
+import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Mousewheel, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin } from "lucide-react";
 
@@ -85,7 +85,6 @@ const Teams = () => {
     },
   ];
 
-  
   const final_year = [
     {
       name: 'Paras Varshney',
@@ -274,13 +273,149 @@ const Teams = () => {
     },
   ];
 
-  const MemberCard = (member) => (
-    <Card className="bg-card border-border card-hover overflow-hidden group relative">
+  const second_year_executives = [
+    {
+      name: 'Aditya Bajpai',
+      position: 'Electronics and Communication Engineering',
+      image: '/Executives/AdityaBajpai.jpg',
+      linkedin: 'https://www.linkedin.com/in/aditya-bajpai-b2336b387',
+    },
+    {
+      name: 'Aditya Pratap Singh',
+      position: 'Civil Engineering',
+      image: '/Executives/AdityaPratapSingh.jpg',
+      linkedin: 'https://www.linkedin.com/in/aditya-pratap-singh-575713306?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    },
+    {
+      name: 'Akshata Shrivastava',
+      position: 'Mechanical Engineering',
+      image: '/Executives/AkshataShrivastava.jpg',
+      linkedin: 'https://www.linkedin.com/in/akshata-shrivastava?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    },
+    {
+      name: 'Amar Singh Yadav',
+      position: 'Electrical Engineering',
+      image: '/Executives/AmarSinghYadav.jpg',
+      linkedin: 'https://www.linkedin.com/in/amar-singh-yadav-73489836b',
+    },
+    {
+      name: 'Anushka Patel',
+      position: 'Electronics and Communication Engineering (Internet of Things)',
+      image: '/Executives/AnushkaPatel.jpg',
+      linkedin: 'https://www.linkedin.com/in/anushka-patel-418549377?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    },
+    {
+      name: 'Arya Suman',
+      position: 'Electronics and Communication Engineering (Internet of Things)',
+      image: '/Executives/AryaSuman.jpg',
+      linkedin: 'https://in.linkedin.com/in/arya-suman-aa303537a',
+    },
+    {
+      name: 'Ashutosh',
+      position: 'Electrical Engineering',
+      image: '/Executives/Ashutosh.jpg',
+      linkedin: 'https://www.linkedin.com/in/ashutosh-yadav-835980376/',
+    },
+    {
+      name: 'Ayush Sachan',
+      position: 'Electronics and Communication Engineering (Internet of Things)',
+      image: '/Executives/AyushSachan.jpg',
+      linkedin: '#',
+    },
+    {
+      name: 'Aditya Raj Nishad',
+      position: 'Electronics and Communication Engineering',
+      image: '/Executives/AdityaRajNishad.jpg',
+      linkedin: 'https://www.linkedin.com/in/aditya-raj-nishad-0786312a6',
+    },
+    {
+      name: 'Dev Raj',
+      position: 'Electrical Engineering',
+      image: '/Executives/DevRaj.jpg',
+      linkedin: '#',
+    },
+    {
+      name: 'Gaurav Prahatiya',
+      position: 'Chemical Engineering',
+      image: '/Executives/GauravPrahatiya.jpg',
+      linkedin: '#',
+    },
+    {
+      name: 'Jahnvi Singh',
+      position: 'Electronics and Communication Engineering',
+      image: '/Executives/JahnviSingh.jpg',
+      linkedin: 'https://www.linkedin.com/in/jahnvi-singh-8179b827b?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    },
+    {
+      name: 'Jyotiraditya',
+      position: 'Computer Science Engineering',
+      image: '/Executives/Jyotiraditya.jpg',
+      linkedin: '#',
+    },
+    {
+      name: 'Kumar rishi pandey',
+      position: 'Electronics and Communication Engineering',
+      image: '/Executives/KumarRishiPandey.jpg',
+      linkedin: '#',
+    },
+    {
+      name: 'Navlesh Singh',
+      position: 'Computer Science Engineering',
+      image: '/Executives/NavleshSingh.jpg',
+      linkedin: 'https://www.linkedin.com/in/navlesh-singh-63917237a',
+    },
+    {
+      name: 'Prashant Goswami',
+      position: 'Information Technology',
+      image: 'https://i.postimg.cc/QCj2p836/IMG-20260402-192606-Prashant-Goswami-(3).jpg',
+      linkedin: 'www.linkedin.com/in/prashant-goswami-5ab7b1382',
+    },
+    {
+      name: 'Ratna Mishra',
+      position: 'Electrical Engineering',
+      image: '/Executives/RatnaMishra.jpg',
+      linkedin: 'https://www.linkedin.com/in/ratna-mishra-3b4a07368?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    },
+    {
+      name: 'Saurabh kushwaha',
+      position: 'Computer Science Engineering',
+      image: '/Executives/SaurabhKushwaha.jpg',
+      linkedin: '#',
+    },
+    {
+      name: 'Shivansh Singh',
+      position: 'Mechanical Engineering',
+      image: '/Executives/ShivanshSingh.jpg',
+      linkedin: 'https://www.linkedin.com/in/shivansh-singh-b89216358/',
+    },
+    {
+      name: 'Sujal Soni',
+      position: 'Mechanical Engineering',
+      image: '/Executives/SujalSoni.jpg',
+      linkedin: 'https://www.linkedin.com/in/sujal-soni-b65b38341',
+    },
+    {
+      name: 'Vaishnavi Pandey',
+      position: 'Electronics and Communication Engineering (Internet of Things)',
+      image: '/Executives/VaishnaviPandey.jpg',
+      linkedin: 'www.linkedin.com/in/vaishnavi-pandey-b8a712363',
+    },
+    {
+      name: 'Yash Srivastav',
+      position: 'Electronics and Communication Engineering (Internet of Things)',
+      image: '/Executives/YashSrivastav.jpg',
+      linkedin: '#',
+    },
+  ];
+
+  const MemberCard = (member: any, isSmall: boolean = false) => (
+    <Card className="bg-card border-border card-hover overflow-hidden group relative h-full flex flex-col min-w-[200px]">
       <div className="relative overflow-hidden">
         <img
           src={member.image}
           alt={member.name}
-          className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+          className={`w-full object-cover transition-transform duration-500 group-hover:scale-110 ${isSmall ? 'h-48' : 'h-64'}`}
+          onError={(e: any) => { e.target.src = 'https://via.placeholder.com/300x400?text=Member' }}
         />
 
         {/* Subtle Blue Overlay */}
@@ -292,19 +427,19 @@ const Teams = () => {
             href={member.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors"
+            className={`${isSmall ? 'w-8 h-8' : 'w-10 h-10'} bg-primary rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors`}
           >
-            <Linkedin className="h-5 w-5 text-primary-foreground" />
+            <Linkedin className={`${isSmall ? 'h-4 w-4' : 'h-5 w-5'} text-primary-foreground`} />
           </a>
         </div>
       </div>
 
-      <CardContent className="p-6 text-center">
-        <h3 className="text-xl font-display font-semibold mb-1 text-foreground">
+      <CardContent className={`text-center flex-1 flex flex-col justify-center ${isSmall ? 'p-4' : 'p-6'}`}>
+        <h3 className={`font-display font-semibold mb-1 text-foreground ${isSmall ? 'text-lg' : 'text-xl'}`}>
           {member.name}
         </h3>
         {member.position && (
-          <p className="text-primary text-sm font-medium mb-1">
+          <p className={`text-primary font-medium mb-1 ${isSmall ? 'text-xs' : 'text-sm'}`}>
             {member.position}
           </p>
         )}
@@ -312,7 +447,6 @@ const Teams = () => {
     </Card>
   );
 
-  // ── SWIPER PROPS (shared config) ─────────────────────────────────────────────
   const swiperProps = {
     modules: [FreeMode, Mousewheel, Navigation],
     navigation: {
@@ -387,6 +521,7 @@ const Teams = () => {
                   src="final-year/AnkitSir.png"
                   alt="Ankit Kumar Mishra"
                   className="w-48 h-48 md:w-52 md:h-52 object-cover rounded-full border-4 border-primary"
+                  onError={(e: any) => { e.target.src = 'https://via.placeholder.com/200x200?text=Founder' }}
                 />
               </div>
 
@@ -419,50 +554,6 @@ const Teams = () => {
         </div>
       </section>
 
-      {/* ── Batch of 2026 (ex-Final Year) ────────────────────────────────────── */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-display font-semibold mb-6 text-foreground">
-            Batch of 2026
-          </h2>
-
-          {/* Mobile & Tablet → Slider */}
-          <div className="lg:hidden">
-            <Swiper {...swiperProps}>
-              {batch_2026.map((member, index) => (
-                <SwiperSlide key={`batch2026-${index}`}>
-                  <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.05 }}
-                    viewport={{ once: true }}
-                  >
-                    {MemberCard(member)}
-                  </motion.div>
-                </SwiperSlide>
-              ))}
-              <div className="swiper-button-prev"></div>
-              <div className="swiper-button-next"></div>
-            </Swiper>
-          </div>
-
-          {/* Large screens → 5×2 grid */}
-          <div className="hidden lg:grid grid-cols-5 gap-6">
-            {batch_2026.map((member, index) => (
-              <motion.div
-                key={`batch2026-grid-${index}`}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.05 }}
-                viewport={{ once: true }}
-              >
-                {MemberCard(member)}
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── Final Year (ex-3rd Year) ──────────────────────────────────────────── */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
@@ -470,24 +561,13 @@ const Teams = () => {
             Final Year
           </h2>
 
-          {/* Mobile & Tablet → Slider */}
-          <div className="lg:hidden">
-            <Swiper {...swiperProps}>
+          {/* Mobile & Tablet → CSS Scroll Snapping */}
+          <div className="lg:hidden flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4">
               {final_year.map((member, index) => (
-                <SwiperSlide key={`final-${index}`}>
-                  <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.05 }}
-                    viewport={{ once: true }}
-                  >
-                    {MemberCard(member)}
-                  </motion.div>
-                </SwiperSlide>
+                  <div key={`final-mob-${index}`} className="snap-center shrink-0 w-[80%] max-w-[300px]">
+                      {MemberCard(member)}
+                  </div>
               ))}
-              <div className="swiper-button-prev"></div>
-              <div className="swiper-button-next"></div>
-            </Swiper>
           </div>
 
           {/* Large screens → grid */}
@@ -513,47 +593,102 @@ const Teams = () => {
           <h2 className="text-2xl font-display font-semibold mb-6 text-foreground">
             Pre-Final Year
           </h2>
-          <Swiper {...swiperProps}>
-            {third_year.map((member, index) => (
-              <SwiperSlide key={`third-${index}`}>
-                <motion.div
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                >
-                  {MemberCard(member)}
-                </motion.div>
-              </SwiperSlide>
-            ))}
-            <div className="swiper-button-prev"></div>
-            <div className="swiper-button-next"></div>
-          </Swiper>
+          
+          <div className="relative group px-2 md:px-6">
+            <Swiper {...swiperProps} className="pb-4">
+              {third_year.map((member, index) => (
+                <SwiperSlide key={`third-${index}`} className="h-auto">
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.05 }}
+                    viewport={{ once: true }}
+                    className="h-full"
+                  >
+                    {MemberCard(member)}
+                  </motion.div>
+                </SwiperSlide>
+              ))}
+              
+              {/* Navigation Arrows */}
+              <div className="swiper-button-prev !text-primary !w-10 !h-10 !bg-background/80 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity absolute left-0 top-1/2 -translate-y-1/2 z-10 hidden md:flex"></div>
+              <div className="swiper-button-next !text-primary !w-10 !h-10 !bg-background/80 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity absolute right-0 top-1/2 -translate-y-1/2 z-10 hidden md:flex"></div>
+            </Swiper>
+          </div>
         </div>
       </section>
 
-      {/* ── Second Year – Executive Members (blank / TBD) ────────────────────── */}
+      {/* ── Second Year – Executive Members ────────────────────── */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-display font-semibold mb-6 text-foreground">
             Second Year – Executive Members
           </h2>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="flex flex-col items-center justify-center py-16 border border-dashed border-border rounded-2xl text-center"
-          >
-            <p className="text-lg text-muted-foreground mb-4">
-              The executive team for the Second Year is currently being formed. Stay tuned for updates as we welcome new members to lead and innovate in the coming year!
-            </p>
-          </motion.div>
+          
+          <div className="relative group px-2 md:px-6">
+            <Swiper {...swiperProps} className="pb-4">
+              {second_year_executives.map((member, index) => (
+                <SwiperSlide key={`exec-${index}`} className="h-auto">
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.05 }}
+                    viewport={{ once: true }}
+                    className="h-full"
+                  >
+                    {MemberCard(member)}
+                  </motion.div>
+                </SwiperSlide>
+              ))}
+              
+              {/* Navigation Arrows */}
+              <div className="swiper-button-prev !text-primary !w-10 !h-10 !bg-background/80 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity absolute left-0 top-1/2 -translate-y-1/2 z-10 hidden md:flex"></div>
+              <div className="swiper-button-next !text-primary !w-10 !h-10 !bg-background/80 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity absolute right-0 top-1/2 -translate-y-1/2 z-10 hidden md:flex"></div>
+            </Swiper>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Batch of 2026 (Moved to bottom & Resized) ────────────────────────────────────── */}
+      <section className="py-20 bg-secondary/10">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center gap-4 mb-8">
+            <h2 className="text-2xl font-display font-semibold text-foreground">
+              Batch of 2026
+            </h2>
+            <div className="h-[1px] flex-1 bg-border" />
+          </div>
+
+          {/* Mobile & Tablet → CSS Scroll Snapping */}
+           <div className="lg:hidden flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4">
+              {batch_2026.map((member, index) => (
+                  <div key={`batch-mob-${index}`} className="snap-center shrink-0 w-[200px]">
+                      {MemberCard(member, true)}
+                  </div>
+              ))}
+          </div>
+
+          {/* Large screens → Flex Wrap for centered smaller cards */}
+          <div className="hidden lg:flex flex-wrap justify-center gap-6">
+            {batch_2026.map((member, index) => (
+              <motion.div
+                key={`batch2026-grid-${index}`}
+                className="w-[200px]" // Fixed smaller width for these cards
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.05 }}
+                viewport={{ once: true }}
+              >
+                {/* Passing 'true' to make the cards small */}
+                {MemberCard(member, true)}
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* ── Join the Team ─────────────────────────────────────────────────────── */}
-      <section className="py-20 bg-gradient-to-r from-background via-background-secondary to-background">
+      <section className="py-20 bg-gradient-to-r from-background via-secondary/10 to-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -582,10 +717,10 @@ const Teams = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group btn-neon px-10 py-4 rounded-lg font-semibold inline-flex items-center gap-2 text-lg tracking-wide shadow-md hover:shadow-xl transition-all mt-6"
+              className="group inline-flex items-center gap-2 px-10 py-4 mt-6 text-lg font-semibold tracking-wide transition-all shadow-md bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 hover:shadow-xl"
             >
               Learn More
-              <Linkedin className="w-5 h-5 opacity-0 translate-x-[-8px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+              <Linkedin className="w-5 h-5 transition-all duration-300 opacity-0 translate-x-[-8px] group-hover:opacity-100 group-hover:translate-x-0" />
             </motion.a>
           </motion.div>
         </div>
@@ -594,7 +729,7 @@ const Teams = () => {
       {/* ── Team Stats ────────────────────────────────────────────────────────── */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             {[
               { number: '150+', label: 'Total Members' },
               { number: '12', label: 'Core Team' },
@@ -609,7 +744,7 @@ const Teams = () => {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="text-4xl md:text-5xl font-display font-bold text-primary mb-2">
+                <div className="mb-2 text-4xl font-bold font-display text-primary md:text-5xl">
                   {stat.number}
                 </div>
                 <div className="text-muted-foreground">
@@ -626,6 +761,3 @@ const Teams = () => {
 };
 
 export default Teams;
-
-
-
