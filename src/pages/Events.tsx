@@ -26,7 +26,7 @@ const Events = () => {
 
   const events = [
     {
-      title: 'SwiftWings 2025',
+      title: 'SwiftWings 2026',
       date: 'Coming Soon',
       location: 'Main Campus',
       description: 'Annual drone competition featuring transformer theme with multiple categories and exciting challenges.',
