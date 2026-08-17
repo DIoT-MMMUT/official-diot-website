@@ -367,8 +367,8 @@ const Teams = () => {
     {
       name: 'Prashant Goswami',
       position: 'Information Technology',
-      image: 'https://i.postimg.cc/QCj2p836/IMG-20260402-192606-Prashant-Goswami-(3).jpg',
-      linkedin: 'www.linkedin.com/in/prashant-goswami-5ab7b1382',
+      image: '/Executives/PrashantGoswami.jpg',
+      linkedin: 'https://www.linkedin.com/in/prashant-goswami-5ab7b1382/',
     },
     {
       name: 'Ratna Mishra',
