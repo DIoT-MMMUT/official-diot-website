@@ -104,7 +104,7 @@ const Teams = () => {
       name: 'Ankit Srivastav',
       position: 'Vice-President',
       branch: 'Computer Science Engineering',
-      image: '/third-year/AnkitSrivastav.JPG',
+      image: '/third-year/AnkitSrivastav.png',
       linkedin: 'https://www.linkedin.com/in/ankit2005',
     },
     {
